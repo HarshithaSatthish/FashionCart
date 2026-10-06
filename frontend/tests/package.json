@@ -1,0 +1,7 @@
+{
+  "name": "fashioncart-frontend-tests",
+  "private": true,
+  "type": "module",
+  "scripts": { "smoke": "node smoke.mjs" },
+  "devDependencies": { "esbuild": "^0.25.0", "jsdom": "^26.0.0" }
+}

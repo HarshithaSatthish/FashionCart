@@ -1,0 +1,794 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error-container":"#93000a","inverse-on-surface":"#f0f0f7","tertiary-fixed-dim":"#4edea3","on-tertiary-fixed":"#002113","outline-variant":"#c7c4d8","tertiary":"#006645","surface-container-high":"#e8e7ef","surface-container-highest":"#e2e2e9","surface-dim":"#d9d9e1","on-error":"#ffffff","primary-fixed-dim":"#c3c0ff","on-tertiary":"#ffffff","on-primary-fixed-variant":"#3424ca","on-tertiary-container":"#e1ffec","on-background":"#1a1b21","on-secondary-container":"#fefcff","on-tertiary-fixed-variant":"#005236","on-secondary-fixed-variant":"#003ea8","tertiary-fixed":"#6ffbbe","outline":"#777587","on-primary":"#ffffff","surface-variant":"#e2e2e9","on-primary-fixed":"#0f0069","primary-fixed":"#e2dfff","primary-container":"#625bf6","surface-container-lowest":"#ffffff","secondary":"#0051d5","secondary-fixed-dim":"#b4c5ff","on-surface":"#1a1b21","background":"#f9f9ff","surface-container-low":"#f3f3fa","on-surface-variant":"#464555","surface":"#f9f9ff","inverse-primary":"#c3c0ff","surface-tint":"#4e44e1","on-secondary":"#ffffff","error-container":"#ffdad6","on-secondary-fixed":"#00174b","error":"#ba1a1a","surface-container":"#ededf5","primary":"#483edc","on-primary-container":"#faf6ff","surface-bright":"#f9f9ff","secondary-container":"#316bf3","tertiary-container":"#008259","inverse-surface":"#2e3036","secondary-fixed":"#dbe1ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.5rem","space-xl":"2rem","gutter":"1.25rem","margin-desktop":"2rem","margin":"1rem","space-xs":"0.25rem","space-md":"0.875rem","gutter-desktop":"1.5rem","space-lg":"1.25rem"},fontFamily:{"body-lg":["Inter"],"headline-sm":["Geist"],"display-lg":["Geist"],"label-mono":["Geist"],"label-sm":["Geist"],"headline-md":["Geist"],"headline-lg":["Geist"],"metric-stat":["Geist"],"body-md":["Inter"],"label-md":["Geist"],"display-lg-mobile":["Geist"],"body-sm":["Inter"]},fontSize:{"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}],"headline-sm":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.03em",fontWeight:"600"}],"label-mono":["10px",{lineHeight:"12px",letterSpacing:"0.06em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"500"}],"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"600"}],"metric-stat":["28px",{lineHeight:"32px",letterSpacing:"-0.03em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"display-lg-mobile":["28px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",letterSpacing:"0.005em",fontWeight:"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-[#111318] border-r border-[#1F242F] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-16 px-gutter flex items-center justify-between border-b border-[#1F242F]"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white shadow-md"><span class="material-symbols-outlined text-[18px]">shopping_bag</span></div><span class="font-headline-sm text-headline-sm text-white tracking-tight">FashionCart</span></div><span class="px-1.5 py-0.5 rounded bg-white/10 text-slate-300 font-label-mono text-label-mono uppercase tracking-wider">v2.4 Pro</span></div><nav class="px-space-sm pt-space-md space-y-space-md" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg"><div class="space-y-1"><div class="px-3 py-1 font-label-mono text-label-mono uppercase text-slate-400 tracking-wider">MAIN</div><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition-colors" data-path="products" href="#"><span class="material-symbols-outlined text-[18px]">checkroom</span><span class="font-body-md text-body-md">Products</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition-colors" data-path="customers" href="#"><span class="material-symbols-outlined text-[18px]">group</span><span class="font-body-md text-body-md">Customers</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-[18px]">shopping_bag</span><span class="font-body-md text-body-md">Orders</span></a></div><div class="space-y-1"><div class="px-3 py-1 font-label-mono text-label-mono uppercase text-slate-400 tracking-wider">INTELLIGENCE</div><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition-colors" data-path="transactions" href="#"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span class="font-body-md text-body-md">Transactions</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition-colors" data-path="analysis" href="#"><span class="material-symbols-outlined text-[18px]">neurology</span><span class="font-body-md text-body-md">Apriori Analysis</span></a><a aria-current="page" class="flex items-center gap-space-sm px-3 py-2 transition-colors bg-primary-container text-on-primary-container font-headline-sm rounded-lg" data-path="rules" href="#"><span class="material-symbols-outlined text-[18px]">hub</span><span class="font-body-md text-body-md">Association Rules</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition-colors" data-path="recommendations" href="#"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span class="font-body-md text-body-md">Recommendations</span></a></div><div class="space-y-1"><div class="px-3 py-1 font-label-mono text-label-mono uppercase text-slate-400 tracking-wider">SYSTEM</div><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-slate-300 hover:bg-white/5 hover:text-white transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[18px]">account_circle</span><span class="font-body-md text-body-md">Profile</span></a></div></nav></div><div class="p-space-sm border-t border-[#1F242F]"><div class="flex items-center justify-between p-2 rounded-lg bg-white/5"><div class="flex items-center gap-2.5 overflow-hidden"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdJnc-fSh3QIZ-qFCdr0zmFcEzGF5PlLAe4Uuh0D0p1LQEAXavFPad2euX_XBjdUX_JVB5bi3-fjjDF8_e6kNUceI1zgcuLwRzxic7GhVAyftkcW2ZdXRB4WwggzMtAkbJpDMsMSvIDwSDPRVDO_dQUD8SX_PNwrkoNXCFlHXHoJjl5MM9XP86wRWfdDadG_VI1keROQ9UdaKsOYoxSgKm_zDX8G45jOvE-INOhfF5JZfB0YiVHkg"><div class="flex flex-col truncate"><span class="font-headline-sm text-body-sm text-white truncate leading-tight">Elena Vance</span><div class="flex items-center mt-0.5"><span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wider bg-tertiary/30 text-tertiary-fixed border border-tertiary-fixed/30">ADMIN</span></div></div></div><button class="p-1.5 text-slate-400 hover:text-white rounded hover:bg-white/10 transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest border-b border-surface-container-high z-40 px-gutter flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm"><span class="font-body-sm text-body-sm text-on-surface-variant">FashionCart</span><span class="font-body-sm text-body-sm text-outline-variant">/</span><span class="font-headline-sm text-headline-sm text-on-surface">Intelligence</span></div><div class="w-96"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-surface-container-high bg-surface-container-low text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-outline">search</span><span class="font-body-sm text-body-sm text-on-surface-variant flex-1">Search products, rules, orders...</span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-lowest border border-surface-container-high text-on-surface-variant font-label-mono text-label-mono">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary/10 border border-tertiary/20 text-tertiary font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="">Apriori Engine Ready</span></div><button class="relative p-2 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error font-label-mono text-[9px] flex items-center justify-center font-bold">3</span></button><button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-label-md hover:bg-primary transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[16px]">play_arrow</span><span class="">Run Analysis</span></button><div class="flex items-center gap-1 pl-2 border-l border-surface-container-high cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdJnc-fSh3QIZ-qFCdr0zmFcEzGF5PlLAe4Uuh0D0p1LQEAXavFPad2euX_XBjdUX_JVB5bi3-fjjDF8_e6kNUceI1zgcuLwRzxic7GhVAyftkcW2ZdXRB4WwggzMtAkbJpDMsMSvIDwSDPRVDO_dQUD8SX_PNwrkoNXCFlHXHoJjl5MM9XP86wRWfdDadG_VI1keROQ9UdaKsOYoxSgKm_zDX8G45jOvE-INOhfF5JZfB0YiVHkg"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">expand_more</span></div></div></header><main class="relative pt-16 bg-surface-container-low flex-1 p-gutter-desktop"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Breadcrumbs & Status Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm font-label-mono text-label-mono text-on-surface-variant uppercase tracking-wider">
+<span class="">Apriori Mining Core</span>
+<span class="">/</span>
+<span class="text-primary font-bold">Affinity Matrix v2.4</span>
+</div>
+<div class="flex items-center gap-space-md">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Association Rules</h1>
+<div class="flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-mono text-label-mono font-semibold uppercase tracking-wider">Engine: Synchronized</span>
+</div>
+</div>
+</div>
+<!-- Live Telemetry Counts -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-1.5 rounded-xl shadow-sm">
+<div class="px-4 py-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Discovered Rules</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">28</span>
+</div>
+<div class="px-4 py-2 rounded-lg bg-primary-fixed/40 flex flex-col">
+<span class="font-label-mono text-label-mono text-on-primary-fixed-variant uppercase">High Affinity</span>
+<span class="font-headline-md text-headline-md text-primary font-semibold">12 Strong <span class="font-label-sm text-label-sm font-normal text-on-primary-fixed-variant">(Lift &gt; 1.30)</span></span>
+</div>
+<button class="h-10 px-4 rounded-lg bg-primary text-on-primary font-headline-sm text-label-md flex items-center gap-1.5 shadow-md hover:bg-on-primary-fixed-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span class="">Re-compute</span>
+</button>
+</div>
+</div>
+<!-- Filter & Parameter Calibration Shelf -->
+<div class="w-full bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-space-md">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-sm items-center">
+<!-- Quick Search Antecedent/Consequent -->
+<div class="lg:col-span-4 relative">
+<div class="flex items-center gap-2 px-3 h-10 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-outline">search</span>
+<input class="w-full bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline-variant" id="ruleSearchInput" placeholder="Search rule antecedents or consequents..." type="text">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-lowest font-label-mono text-[9px] text-outline">ESC</kbd>
+</div>
+</div>
+<!-- Filter: Product Context -->
+<div class="lg:col-span-2 relative">
+<button class="w-full h-10 px-3 rounded-lg bg-surface-container-low flex items-center justify-between text-left text-on-surface hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">category</span>
+<span class="font-body-sm text-body-sm truncate">All Products (30)</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+</div>
+<!-- Filter: Min Lift -->
+<div class="lg:col-span-2 relative">
+<button class="w-full h-10 px-3 rounded-lg bg-surface-container-low flex items-center justify-between text-left text-on-surface hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-label-mono text-label-mono font-bold text-primary">LIFT</span>
+<span class="font-body-sm text-body-sm truncate">Lift ≥ 1.0</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+</div>
+<!-- Filter: Min Confidence -->
+<div class="lg:col-span-2 relative">
+<button class="w-full h-10 px-3 rounded-lg bg-surface-container-low flex items-center justify-between text-left text-on-surface hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-label-mono text-label-mono font-bold text-tertiary">CONF</span>
+<span class="font-body-sm text-body-sm truncate">Conf ≥ 30%</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+</div>
+<!-- Sort Directive -->
+<div class="lg:col-span-2 relative">
+<button class="w-full h-10 px-3 rounded-lg bg-surface-container-low flex items-center justify-between text-left text-on-surface hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-outline">sort</span>
+<span class="font-body-sm text-body-sm truncate font-medium">Lift (High-Low)</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline">unfold_more</span>
+</button>
+</div>
+</div>
+<!-- Active Tags Row -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<span class="font-label-mono text-label-mono uppercase text-outline">Filters:</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="">Min Lift ≥ 1.00</span>
+<button class="hover:text-primary"><span class="material-symbols-outlined text-[12px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="">Min Confidence ≥ 30%</span>
+<button class="hover:text-secondary"><span class="material-symbols-outlined text-[12px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="">Dataset: Past 90 Days (54.2K checkouts)</span>
+</span>
+<button class="ml-auto font-label-mono text-label-mono uppercase text-primary hover:underline font-semibold">Reset Defaults</button>
+</div>
+</div>
+<!-- Primary Analytical Layout (Grid + Floating Drawer Container) -->
+<div class="relative w-full overflow-hidden">
+<!-- Table Container -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-mono text-label-mono uppercase tracking-wider h-11">
+<th class="px-space-md font-semibold">Antecedent (LHS)</th>
+<th class="px-space-xs text-center font-semibold w-24">Link</th>
+<th class="px-space-md font-semibold">Consequent (RHS)</th>
+<th class="px-space-md font-semibold">Support %</th>
+<th class="px-space-md font-semibold">Confidence %</th>
+<th class="px-space-md font-semibold">Lift Ratio</th>
+<th class="px-space-md font-semibold">Affinity Class</th>
+<th class="px-space-md font-semibold">Basket Value (₹)</th><th class="px-space-md text-right font-semibold">Inspection</th>
+</tr>
+</thead>
+<tbody class="divide-transparent font-body-sm text-body-sm text-on-surface">
+<!-- Row 1: Active Focus (Matched with Drawer) -->
+<tr class="h-16 hover:bg-surface-container-low/60 transition-colors bg-primary-fixed/20 relative" id="rule-row-1">
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Minimalist high fashion white cotton classic crewneck t-shirt folded neatly on clean neutral surface with soft directional sunlight, studio lookbook aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtJI2WJHkA86gVk0ngbzBAYASuOvQa4UND84DnS5hgjKMFogA3axp_lKpK2b-e2R57yuKvHO-vLFbQ-VS2AkBhsyy2pUBkXKNSaJaFaX4LovTxsb0iGRX9_TyCuJXaG7kAFONL-HylyIHPxFZAHrxGU1ey6zqBESs5z6MPMibQ9lsHnlMnWpQ3LYBGGrDRWNzf_SZFrIt-cVodUUvMegdshgbmzXbBzXu-FQtXZcZBSjEIxKxK0-U">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Classic T-Shirt</span>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wide bg-surface-container-high text-on-surface-variant">Essentials</span>
+<span class="font-label-mono text-[9px] text-outline">SKU-7729</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-xs text-center">
+<div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-container text-on-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Tailored washed dark blue denim slim cut jeans laid flat against crisp clean daylight studio background, raw luxury garment texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrWrF0c44SXvoKoEiyUmbEAJRELLBI0_GNDhFCwAzgiTN76D7YCcNlBbPAXIfBiZXhOtv2YiFkJZEukqDQk8wti-bq50zDRj6g0CYNSMx319pBf-jxdLPHv9gIRGkjsXUZiJz_rLnC052dyXAMzmuR3WDRJd1ieNxoRb_jiKCjdehBADwsQt1Aaz9kirR-61Z7o19EtbUY5xDtW2gKVuXg51oJILoEzBfClaXDussqf1yFS69QVIs">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Slim Jeans</span>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wide bg-surface-container-high text-on-surface-variant">Bottoms</span>
+<span class="font-label-mono text-[9px] text-outline">SKU-3104</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col w-28">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-mono text-label-mono font-semibold text-secondary">42.0%</span>
+<span class="font-label-mono text-[9px] text-outline">22.7K tx</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 42%;"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="font-metric-stat text-headline-sm font-semibold text-tertiary">76.2%</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">trending_up</span>
+</div>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-primary-fixed text-on-primary-fixed-variant font-label-mono text-label-md font-bold">
+                1.38x
+              </span>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+                Strong
+              </span>
+</td>
+<td class="px-space-md"><div class="flex flex-col"><span class="font-headline-sm text-body-md font-semibold text-on-surface">₹4,998</span><span class="font-label-mono text-[9px] text-tertiary font-medium">+₹3.84L / mo impact</span></div></td><td class="px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-label-sm shadow-sm hover:bg-primary transition-colors inline-flex items-center gap-1" onclick="openDrawer('rule1')">
+<span class="">View Insight</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="h-16 hover:bg-surface-container-low/60 transition-colors" id="rule-row-2">
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="flex -space-x-3 overflow-hidden shrink-0">
+<div class="w-8 h-8 rounded-lg overflow-hidden ring-2 ring-surface-container-lowest bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Classic white cotton t-shirt minimalist lookbook garment flatlay view with subtle natural texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjFanrDXmU7LHZC0VgFxNOpyXUxTspAkMDTOEfjWrUTs8fmwBcLh4Br01nDOVMCx-tC5vA_9C0UJJvGproqrdNKXxl5VOHU96xvAmdwVXJYc5dAod50-j0nvRM2MeBWCsiPG4u8FYTRoP_NngBiuU_nK_UENcR2cR1_HvetTisHBws4tuQCozHLqsM-wvyUplo95OPn0yZ9PeBcqM9lHO51JXP25V9YbR71yAtpmhi3v9seYvMyc8">
+</div>
+<div class="w-8 h-8 rounded-lg overflow-hidden ring-2 ring-surface-container-lowest bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Tailored slim blue denim jeans luxury apparel catalog view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF9mF0b1hU6Lc9OG4c1lTD3Isvh4oFXA86ShN1_jyj9OaPSgS7DBR_FIihnoGSb10A5VnteQvPQK4O4zSKSbRgtja_8Eb0FmpyskOiqn5fx7RfOdDNeB7wyU7WvY3Zt4Hfho1zsUe5gZsQX4TCR2tv4Iyy1hU6MD0hwBEMjJAkewQ2QgFqa3igFuc4EXZ04NRJiGHweFaoeARRK5hAKDj6XvCVapjg2IW1wR6RSQ-wo0pFWJPoOZ8">
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">T-Shirt, Slim Jeans</span>
+<span class="font-label-mono text-[9px] text-outline">Bundle Antecedent (2 items)</span>
+</div>
+</div>
+</td>
+<td class="px-space-xs text-center">
+<div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Crisp minimalist all-white luxury leather sneakers on monochromatic off-white pedestal, sculptural side profile fashion photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGIw2bCseXTorV10oyOa2CD2E1NPHo1RPzL_kwPzJ3WsZij2UxDyBW1zvaM_0LVxgSNoXTSV8wyUw5nYlv7cpInFiA7je0ueYC3uC4m9zslT0tcSD-_xk56KbrGUOTUIB0PjoqeDvADpOzRpdQTC36PRPQqseUqn2OFxvw14LCeOY1dlzXvMUW0SJ3olzdhSigSl9a96b11bR6NgJ65oZiNPyVmlGX1LbVPqlbM20r73xpBGmg-vc">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">White Sneakers</span>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wide bg-surface-container-high text-on-surface-variant">Footwear</span>
+<span class="font-label-mono text-[9px] text-outline">SKU-9902</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col w-28">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-mono text-label-mono font-semibold text-secondary">31.0%</span>
+<span class="font-label-mono text-[9px] text-outline">16.8K tx</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 31%;"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="font-metric-stat text-headline-sm font-semibold text-tertiary">68.0%</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">trending_up</span>
+</div>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-primary-fixed text-on-primary-fixed-variant font-label-mono text-label-md font-bold">
+                1.42x
+              </span>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+                Strong
+              </span>
+</td>
+<td class="px-space-md"><div class="flex flex-col"><span class="font-headline-sm text-body-md font-semibold text-on-surface">₹9,497</span><span class="font-label-mono text-[9px] text-tertiary font-medium">3-item bundle</span></div></td><td class="px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-headline-sm text-label-sm transition-colors inline-flex items-center gap-1" onclick="openDrawer('rule2')">
+<span class="">View Insight</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="h-16 hover:bg-surface-container-low/60 transition-colors" id="rule-row-3">
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Airy lightweight linen floral summer dress hanging on minimal wood hanger with soft golden daylight illumination, luxury resort wear catalog" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4CG_BJoLIWT1WpqBDNk1c7QgDg8sZgPzPJlT3GTLpwDN0EWrrroi4mNVj975cdJDzGDVrPaP4-9PQWmkgbQr9WO698X_jzuw1VvFmwlZAaE2pPlonsAWBzXhYHbq8HMkw_L-DuSi53V2iwE0ANAmqvzJV7O2eB3tPMaTxGRVd2aO-aam4QoAIHyYKcF0Vmxx-qA396iHZKep52N0725Op_TA3rVw53eKVjUuXQrf6VlqqV_20sVM">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Summer Dress</span>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wide bg-surface-container-high text-on-surface-variant">Dresses</span>
+<span class="font-label-mono text-[9px] text-outline">SKU-4411</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-xs text-center">
+<div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Refined structured tan camel leather handbag with subtle gold hardware details resting on ivory stone plinth, high end luxury accessory photograph" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgWpsqCyzI5P4zObAQUCiQXxfZnohRTAM-RLW6pHNoxcPSQ7aG4xZ9IDpMhgwWFoo4aAcTCPdPYolbX-wAb4UZOiARn3-MuJqbEE_rSMbKJRicPq8tWN1FLnarXEELmIb7S5HFUtkpb1nAkG3mHhhQiS9Tx5IAjrmTSOi6ShIfkxwdWYKo2mmWk-io7zcQ6Eo9SKKNtvnxWXT1VvW5j2jDrkB3XLv3dcWVGLE5yLtZGZRT9ColtLQ">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Leather Handbag</span>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wide bg-surface-container-high text-on-surface-variant">Accessories</span>
+<span class="font-label-mono text-[9px] text-outline">SKU-8119</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col w-28">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-mono text-label-mono font-semibold text-secondary">36.4%</span>
+<span class="font-label-mono text-[9px] text-outline">19.7K tx</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 36.4%;"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="font-metric-stat text-headline-sm font-semibold text-tertiary">71.4%</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">trending_up</span>
+</div>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-primary-fixed text-on-primary-fixed-variant font-label-mono text-label-md font-bold">
+                1.34x
+              </span>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+                Strong
+              </span>
+</td>
+<td class="px-space-md"><div class="flex flex-col"><span class="font-headline-sm text-body-md font-semibold text-on-surface">₹7,798</span><span class="font-label-mono text-[9px] text-tertiary font-medium">+₹2.45L / mo impact</span></div></td><td class="px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-headline-sm text-label-sm transition-colors inline-flex items-center gap-1" onclick="openDrawer('rule3')">
+<span class="">View Insight</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="h-16 hover:bg-surface-container-low/60 transition-colors" id="rule-row-4">
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Crisp light blue oxford button-down cotton shirt hanging against clean concrete wall, luxury menswear minimalist editorial" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDt4TYsviUPsy6MpSApUqaRAWHjdXIEj_rpyNPMVE7o6oZo1qWsgJXeAlIS4KJn9TqtwC1UsMy5nZYP1wjcsWpx7HK21qkIZ90LJaCGrUFMcdmW2FOpMcOAJ4gP1RMuLRaLrz8ZlKHi096EjfZj14vs30Uwkxn_liSTYTuIpwaBcwqsKMCDZqLDLyZHThwmO_8lIZknDybRdZ7Emnwn6QPfEx8TKL-jTIm2iVlIK6KLQwlkUeZ36o">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Oxford Shirt</span>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wide bg-surface-container-high text-on-surface-variant">Shirts</span>
+<span class="font-label-mono text-[9px] text-outline">SKU-2051</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-xs text-center">
+<div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Tailored tapered black dress trousers made from high grade wool draped smoothly on minimal wooden hanger" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ76ph-Q4zQ6bbzs7h0vHYW6eWm5LzWtncpyCJaodUOZl-80DL3QdUsOjhAaMY4pzhXxy9p1Faoyp2QfgwG5z2hOPm2-MkJ6rG8JV-qHSehnV46NaSYP4VUcu2ejxP2JY3DO7lhAfDkq9-fhJlUShS-y9D2hTDeE2Vd_Odauydnld1jJlB77EoJjMMnvJyahuOJU6Ugynppxm92c4v4z2KdJ0wdxZG4Pdq2vNYYIrSjqKwxnj0E8w">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Black Trousers</span>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wide bg-surface-container-high text-on-surface-variant">Bottoms</span>
+<span class="font-label-mono text-[9px] text-outline">SKU-5884</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col w-28">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-mono text-label-mono font-semibold text-secondary">38.2%</span>
+<span class="font-label-mono text-[9px] text-outline">20.6K tx</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 38.2%;"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="font-metric-stat text-headline-sm font-semibold text-tertiary">69.1%</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">trending_up</span>
+</div>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-primary-fixed text-on-primary-fixed-variant font-label-mono text-label-md font-bold">
+                1.29x
+              </span>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+                Strong
+              </span>
+</td>
+<td class="px-space-md"><div class="flex flex-col"><span class="font-headline-sm text-body-md font-semibold text-on-surface">₹5,998</span><span class="font-label-mono text-[9px] text-outline font-medium">Formal pairing</span></div></td><td class="px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-headline-sm text-label-sm transition-colors inline-flex items-center gap-1" onclick="openDrawer('rule4')">
+<span class="">View Insight</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="h-16 hover:bg-surface-container-low/60 transition-colors" id="rule-row-5">
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Minimalist all-white luxury leather designer athletic sneakers on architectural podium, bright studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEIDNSwHZob8zwWtcQajA8kFy9B9A7jTK5UcktxDcdTuYMoa8eKa5QfbAci98a3jEFz-P5J5q610TJENfmh6EZdZpPnLBXFNUbZEzW7cuwsu9wpSZdefX-ikrz-iEPcPVK6zedR8iSOUDNaJzgqc5OJkrNtSXubIgYXsNBRLnldyEQh7ceqyy7dvriAOa6uM6F4SBTO4O_PHYZP2VIxl-6gA6UjVw35jHqcQ1kLjZUpSSsjDr-yMA">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">White Sneakers</span>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wide bg-surface-container-high text-on-surface-variant">Footwear</span>
+<span class="font-label-mono text-[9px] text-outline">SKU-9902</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-xs text-center">
+<div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Modern technical performance activewear matching grey hoodie and jogger tracksuit ensemble on minimal mannequin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP1rilrjI_5mSZTFjHMh6ImUcnbkBJSGZ2-rvlqamduAR11smaW9WakBIqbKg_-R3IKHMZLFKsr5669Hh-dynGXLRR_JEmaOnk_0nWTXDmU6t-lmSvdkUA5NHnY1JwTJXRFt0l0fjvtUYJ89muKke-e2-OvwkdO7EfCMr9OhVMSLlzZDui9SWH7yMNwPQ14uIjUalMxPnyvwzCRv45d9hsDGkWBuS9d1c9XHwEoofxLugLgys1E1Y">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Sportswear Set</span>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wide bg-surface-container-high text-on-surface-variant">Athletic</span>
+<span class="font-label-mono text-[9px] text-outline">SKU-6120</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col w-28">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-mono text-label-mono font-semibold text-secondary">29.1%</span>
+<span class="font-label-mono text-[9px] text-outline">15.7K tx</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 29.1%;"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="font-metric-stat text-headline-sm font-semibold text-on-surface">64.0%</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">trending_flat</span>
+</div>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-mono text-label-md font-bold">
+                1.26x
+              </span>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Moderate
+              </span>
+</td>
+<td class="px-space-md"><div class="flex flex-col"><span class="font-headline-sm text-body-md font-semibold text-on-surface">₹7,998</span><span class="font-label-mono text-[9px] text-outline font-medium">Active combo</span></div></td><td class="px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-headline-sm text-label-sm transition-colors inline-flex items-center gap-1" onclick="openDrawer('rule5')">
+<span class="">View Insight</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="h-16 hover:bg-surface-container-low/60 transition-colors" id="rule-row-6">
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Classic indigo blue denim trucker jacket neatly hung on brushed steel bar against industrial concrete wall, high-end editorial" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyJ3_Ao1iv064CB-KRFCkPWoe8NPa0dWo-2ZfvcmswEQ0x9wKy1PC7CAbLIkXXTBwYh-8MhMkEg-kJ5dRM_pH-w-_avsibDOnlXmBxteJYMUC6ZB0bqpkSEKQAKYnPH9Q3YU3U3BSzlhoc2QLYYFXfWEd5Pwi90rrZsacPyM78i5dAJ5CLipti-xoi1aVcSuhtR3uLtzayxboMKCcxKQsfhanumQrijdNXNvqoH1L0TK4sHp9clxs">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Denim Jacket</span>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wide bg-surface-container-high text-on-surface-variant">Outerwear</span>
+<span class="font-label-mono text-[9px] text-outline">SKU-1082</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-xs text-center">
+<div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Vintage-inspired washed black graphic oversized t-shirt laid on white background, subtle screenprint typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPJb-XQ4v_lbQYCJJIt1-n1VBwmqPBaGa_mKfDFnK0dzNgjOfH5a0EPR8BM0ldlY1hjNYsXFmK3rBTOHmwuzP3P9lI0mnkQbb70MrnGbQY_Q5SB3Ytr6U5aRuX7mz7J3ohOF6nejch6E8rxOSJRLKa1Ql47ydXYWPHYk2H5zVTxWJx-WaQJw6slp61PcTa0VqrgNWQcbFoblvKKL5dyN4VkYj3fWiXp9yJ48zyDr2HDVnXetLTyzA">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Graphic T-Shirt</span>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wide bg-surface-container-high text-on-surface-variant">Essentials</span>
+<span class="font-label-mono text-[9px] text-outline">SKU-7740</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col w-28">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-mono text-label-mono font-semibold text-secondary">24.5%</span>
+<span class="font-label-mono text-[9px] text-outline">13.2K tx</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 24.5%;"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="font-metric-stat text-headline-sm font-semibold text-on-surface">58.3%</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">trending_flat</span>
+</div>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-mono text-label-md font-bold">
+                1.19x
+              </span>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Moderate
+              </span>
+</td>
+<td class="px-space-md"><div class="flex flex-col"><span class="font-headline-sm text-body-md font-semibold text-on-surface">₹4,798</span><span class="font-label-mono text-[9px] text-outline font-medium">Streetwear pair</span></div></td><td class="px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-headline-sm text-label-sm transition-colors inline-flex items-center gap-1" onclick="openDrawer('rule6')">
+<span class="">View Insight</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+<!-- Row 7 -->
+<tr class="h-16 hover:bg-surface-container-low/60 transition-colors" id="rule-row-7">
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Refined Italian full-grain black leather dress belt with polished silver buckle coiled elegantly on daylight studio table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6_0sICNxDyDsPhqIFi-MshbbOlyqOGkpeyxHBuV5JEQpzLbR28sLUbE2399O1biygLCPqylHtbimMF-lWkkr-K-Ub79TdU-z0zbiioylUMoXOyX-b2E6X9AAn395azFfzrgF74_JTO-7068TwzvqfCZOLXH8yHQ1jpPk6EUeUXydReieP-XqX175mTZ3P-uSwE8Eo14DLteGPQhilT_PmQ0unoePBQlsyRnD6XrN2h8TjM7djznU">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Leather Belt</span>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wide bg-surface-container-high text-on-surface-variant">Accessories</span>
+<span class="font-label-mono text-[9px] text-outline">SKU-3320</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-xs text-center">
+<div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Tailored tapered black dress trousers made from high grade wool draped smoothly on minimal wooden hanger" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCEVzlSNk_ATLczeqXJjaXUxVYsfyBqq_hhqSctwNrGoLeWMP6BoNpW6qEGbQajlJIkUedJs0q1EvxM9ZcQcR9SRVhLuv8N5cVvyiJFa2bJsqbwEIFclydzvBVGcbBVOzI6UGKHXOtAwTbZZoZIRVRAAT6kL6jfgIELfeLR_Z8cNghSvSzjBqRNEsxpfX_DFjvkMYuLJrf9eGs81eh_8KCpzHTygI4YOgQcB13qs1Djepj3NT2YBo">
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Black Trousers</span>
+<div class="flex items-center gap-1.5">
+<span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wide bg-surface-container-high text-on-surface-variant">Bottoms</span>
+<span class="font-label-mono text-[9px] text-outline">SKU-5884</span>
+</div>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex flex-col w-28">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-mono text-label-mono font-semibold text-secondary">22.0%</span>
+<span class="font-label-mono text-[9px] text-outline">11.9K tx</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 22%;"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="font-metric-stat text-headline-sm font-semibold text-on-surface">52.0%</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">trending_flat</span>
+</div>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-mono text-label-md font-bold">
+                1.15x
+              </span>
+</td>
+<td class="px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Moderate
+              </span>
+</td>
+<td class="px-space-md"><div class="flex flex-col"><span class="font-headline-sm text-body-md font-semibold text-on-surface">₹4,998</span><span class="font-label-mono text-[9px] text-outline font-medium">Cross-accessory</span></div></td><td class="px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-headline-sm text-label-sm transition-colors inline-flex items-center gap-1" onclick="openDrawer('rule7')">
+<span class="">View Insight</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Table Footer Metadata -->
+<div class="px-space-md py-space-sm bg-surface-container-low/50 flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-label-mono text-label-mono">
+<div class="flex items-center gap-space-sm">
+<span class="">Displaying 7 of 28 Discovered Association Rules</span>
+<span class="">•</span>
+<span class="">Minimum thresholds: Support ≥ 0.20 | Confidence ≥ 0.30 | Lift ≥ 1.00</span>
+</div>
+<div class="flex items-center gap-1 mt-2 sm:mt-0">
+<button class="p-1 rounded bg-surface-container-lowest text-on-surface disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[14px]">chevron_left</span>
+</button>
+<span class="px-2 font-bold text-on-surface">Page 1 of 4</span>
+<button class="p-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Prominent Right Drawer Overlay: Rule Insight #01 -->
+<div class="absolute top-0 right-0 bottom-0 w-full max-w-lg bg-surface-container-lowest shadow-xl flex flex-col z-30 transition-transform duration-300 transform translate-x-0" id="ruleDrawer">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Rule Insight #01</h2>
+<span class="px-1.5 py-0.2 rounded font-label-mono text-[9px] uppercase tracking-wide bg-tertiary-container text-on-tertiary-container font-semibold">Active</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant">APRIORI-PAIR-7729-3104</span>
+</div>
+</div>
+<button class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="closeDrawer()" title="Close Panel">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Content Scrollable Area -->
+<div class="flex-1 overflow-y-auto p-space-lg space-y-space-lg">
+<!-- Large Visual Node Graph Relationship -->
+<div class="p-space-md rounded-xl bg-surface-container-low relative overflow-hidden"><div class="flex items-center justify-between mb-3"><div class="font-label-mono text-label-mono text-outline uppercase tracking-wider">Cart Association Topology</div><span class="font-label-mono text-[10px] text-primary font-bold bg-primary-fixed px-2 py-0.5 rounded-full">Lift: 1.38x (P &lt; 0.001)</span></div><div class="flex items-center justify-between gap-space-sm relative z-10"><div class="flex flex-col items-center text-center w-36"><div class="w-16 h-16 rounded-xl overflow-hidden bg-surface-container-lowest shadow-md p-1 border border-primary/20"><img class="w-full h-full object-cover rounded-lg" data-alt="Classic white cotton t-shirt minimal studio presentation, sharp product catalog lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIHkQOGZoKC_SLCaOmtrdVa4A1W4ZQbNNYOAbB2dK8Ku5Ky9viPwuVkThNpuO_G-_4qiQcJdThGHy7xFlcyvk0i9s3OWgmTDffT-20MAApazD7P-nQqke4SBd-N1klODidyTjQm-In20pzaRu7L_h-rpOdvJbRqaHSDCnvhMuvG5LCa0d6seQaQEBdRqWEzPoPDlVJA4og5Hzvha48vX9mBGgFF2uZuK4-BYjJbjUCf4-7m7C9vyc"></div><span class="font-headline-sm text-body-sm text-on-surface font-semibold mt-2 line-clamp-1">Classic T-Shirt</span><span class="font-label-mono text-body-sm text-primary font-bold mt-0.5">₹1,499</span><span class="font-label-mono text-[10px] text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded mt-0.5">Antecedent (LHS)</span></div><div class="flex-1 flex flex-col items-center justify-center px-1"><span class="px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-mono text-[10px] font-bold shadow-sm">1.38x LIFT</span><div class="w-full flex items-center justify-center my-2 relative"><div class="w-full h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div><div class="absolute w-3.5 h-3.5 rounded-full bg-primary ring-2 ring-surface-container-lowest shadow"></div><span class="material-symbols-outlined text-[16px] text-primary absolute right-0">arrow_forward</span></div><span class="font-label-mono text-[9px] text-tertiary font-bold tracking-tight bg-tertiary/10 px-2 py-0.5 rounded-full">Conf: 76.2% | Supp: 42.0%</span></div><div class="flex flex-col items-center text-center w-36"><div class="w-16 h-16 rounded-xl overflow-hidden bg-surface-container-lowest shadow-md p-1 border border-secondary/20"><img class="w-full h-full object-cover rounded-lg" data-alt="Tailored slim dark washed blue jeans placed flat on clean surface, high fashion product shoot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIbg76p8QAKtAAOoqa1CbN3yLJcwbm82XiWPWjV8ccNysq3nlDXjhaD4hcH0jnXi1YR0rTu_UrV-A-0LarKlHIayJ519sBex4zlyJhGGGcEcYCMONJODUPTOVsgi0tAZJGIR2C-5USgAnHOXXljVm8GfjrV95sUiTcXZT4xPKP3wCvISmh-_fR6FgajFEpQR79b5nRqJ1BI2uZaiQsCeetOP2Y2ayIyvkrJCN72XwnR1ZB4_HFsQw"></div><span class="font-headline-sm text-body-sm text-on-surface font-semibold mt-2 line-clamp-1">Slim Jeans</span><span class="font-label-mono text-body-sm text-secondary font-bold mt-0.5">₹3,499</span><span class="font-label-mono text-[10px] text-on-surface-variant bg-surface-container-high px-1.5 py-0.5 rounded mt-0.5">Consequent (RHS)</span></div></div><div class="mt-space-md p-space-sm rounded-lg bg-surface-container-lowest flex items-start gap-2.5"><span class="material-symbols-outlined text-[20px] text-primary shrink-0 mt-0.5">lightbulb</span><div class="space-y-0.5"><div class="font-headline-sm text-body-sm font-semibold text-on-surface">Plain-Language Translation</div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Slim Jeans are purchased <span class="font-semibold text-on-surface">significantly more often</span> with the Classic T-Shirt than by chance alone. Cross-selling at checkout yields a 38% uplift over standard category conversion.</p></div></div></div>
+<!-- Telemetry Triad (Support, Confidence, Lift) -->
+<div class="p-space-md rounded-xl bg-primary-fixed/20 border border-primary/20 space-y-space-sm"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-primary">currency_rupee</span><span class="font-headline-sm text-body-sm font-bold text-on-surface">Revenue &amp; Pricing Impact</span></div><span class="px-2 py-0.5 rounded-full font-label-mono text-[10px] font-bold bg-tertiary text-white">+₹3,84,000 / mo</span></div><div class="grid grid-cols-3 gap-2 pt-1"><div class="p-2 rounded-lg bg-surface-container-lowest"><span class="font-label-mono text-[9px] text-outline uppercase">LHS Price</span><div class="font-headline-sm text-body-md font-bold text-on-surface">₹1,499</div></div><div class="p-2 rounded-lg bg-surface-container-lowest"><span class="font-label-mono text-[9px] text-outline uppercase">RHS Price</span><div class="font-headline-sm text-body-md font-bold text-on-surface">₹3,499</div></div><div class="p-2 rounded-lg bg-surface-container-lowest border border-primary/20"><span class="font-label-mono text-[9px] text-primary uppercase font-bold">Basket Value</span><div class="font-headline-sm text-body-md font-bold text-primary">₹4,998</div></div></div><div class="flex items-center justify-between text-[11px] font-label-mono text-on-surface-variant pt-0.5"><span class="">Estimated incremental co-purchase revenue:</span><span class="font-bold text-tertiary">₹3.84 Lakhs / 30d</span></div></div><div class="grid grid-cols-3 gap-space-sm">
+<!-- Metric: Support -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Support</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">pie_chart</span>
+</div>
+<div class="my-2">
+<span class="font-metric-stat text-headline-lg font-bold text-on-surface">0.42</span>
+</div>
+<div class="font-label-mono text-[9px] text-on-surface-variant leading-tight">
+              42.0% of all orders contain this pair
+            </div>
+</div>
+<!-- Metric: Confidence -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Confidence</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span>
+</div>
+<div class="my-2">
+<span class="font-metric-stat text-headline-lg font-bold text-tertiary">0.76</span>
+</div>
+<div class="font-label-mono text-[9px] text-on-surface-variant leading-tight">
+              76% of T-Shirt buyers add Slim Jeans
+            </div>
+</div>
+<!-- Metric: Lift -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Lift Ratio</span>
+<span class="material-symbols-outlined text-[14px] text-primary">bolt</span>
+</div>
+<div class="my-2">
+<span class="font-metric-stat text-headline-lg font-bold text-primary">1.38x</span>
+</div>
+<div class="font-label-mono text-[9px] text-on-surface-variant leading-tight">
+              1.38x more likely than random baseline
+            </div>
+</div>
+</div>
+<!-- Affinity Classification & Quality Assessment -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface">Affinity Classification</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span>
+              Strong Association
+            </span>
+</div>
+<!-- Quality Metric Breakdown Lines -->
+<div class="space-y-2 pt-1 font-body-sm text-body-sm">
+<div>
+<div class="flex justify-between text-[11px] font-label-mono text-on-surface-variant mb-1">
+<span class="">Conviction (P(¬RHS)/P(¬RHS|LHS))</span>
+<span class="font-bold text-on-surface">2.41</span>
+</div>
+<div class="w-full h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 78%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[11px] font-label-mono text-on-surface-variant mb-1">
+<span class="">Leverage (P(LHS∩RHS) - P(LHS)P(RHS))</span>
+<span class="font-bold text-on-surface">+0.116</span>
+</div>
+<div class="w-full h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-tertiary" style="width: 65%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Inventory Telemetry Snapshot -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-sm">
+<div class="font-headline-sm text-body-sm font-semibold text-on-surface flex items-center justify-between">
+<span class="">Inventory Coupling</span>
+<span class="font-label-mono text-label-mono text-outline font-normal">Warehouse Region: US-EAST</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-xs rounded-lg bg-surface-container-lowest">
+<div class="font-label-mono text-[9px] text-on-surface-variant">T-SHIRT STOCK</div>
+<div class="font-headline-sm text-body-md font-bold text-on-surface mt-0.5">1,480 units</div>
+<div class="text-[10px] text-tertiary font-medium">9.2 days coverage</div>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-lowest">
+<div class="font-label-mono text-[9px] text-on-surface-variant">SLIM JEANS STOCK</div>
+<div class="font-headline-sm text-body-md font-bold text-on-surface mt-0.5">820 units</div>
+<div class="text-[10px] text-tertiary font-medium">5.8 days coverage</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="p-space-lg bg-surface-container-low flex flex-col gap-space-xs">
+<button class="w-full h-11 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-label-md flex items-center justify-center gap-2 hover:bg-primary shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span class="">Recommend From This Rule</span>
+</button>
+<button class="w-full h-10 rounded-lg bg-surface-container-lowest text-on-surface font-headline-sm text-label-md flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+<span class="">View Product Details</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function closeDrawer() {
+    const drawer = document.getElementById('ruleDrawer');
+    if (drawer) {
+      drawer.classList.add('translate-x-full');
+      drawer.classList.remove('translate-x-0');
+    }
+  }
+
+  function openDrawer(ruleId) {
+    const drawer = document.getElementById('ruleDrawer');
+    if (drawer) {
+      drawer.classList.remove('translate-x-full');
+      drawer.classList.add('translate-x-0');
+    }
+  }
+
+  // Filter input instant responsiveness demo
+  document.getElementById('ruleSearchInput')?.addEventListener('input', function(e) {
+    const term = e.target.value.toLowerCase();
+    const rows = document.querySelectorAll('tbody tr');
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      row.style.display = text.includes(term) ? '' : 'none';
+    });
+  });
+</script></main></div>
+
+</body></html>

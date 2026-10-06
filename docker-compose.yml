@@ -1,0 +1,75 @@
+name: fashioncart
+services:
+  db:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-fashioncart}
+      MYSQL_USER: ${MYSQL_USER:-fashioncart}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Set MYSQL_PASSWORD in .env}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set MYSQL_ROOT_PASSWORD in .env}
+    volumes:
+      - fashioncart_mysql:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 10s
+    networks: [fashioncart]
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    environment:
+      APP_ENV: ${APP_ENV:-production}
+      DEBUG: ${DEBUG:-false}
+      DATABASE_URL: mysql+pymysql://${MYSQL_USER:-fashioncart}:${MYSQL_PASSWORD:?Set MYSQL_PASSWORD in .env}@db:3306/${MYSQL_DATABASE:-fashioncart}
+      JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET in .env}
+      ACCESS_TOKEN_EXPIRE_MINUTES: ${ACCESS_TOKEN_EXPIRE_MINUTES:-120}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      RATE_LIMIT_ENABLED: ${RATE_LIMIT_ENABLED:-true}
+      ALLOW_REGISTRATION: ${ALLOW_REGISTRATION:-true}
+    expose:
+      - "8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/ready', timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    networks: [fashioncart]
+
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-3000}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks: [fashioncart]
+
+  seed:
+    build: ./backend
+    profiles: ["tools"]
+    environment:
+      APP_ENV: ${APP_ENV:-production}
+      DATABASE_URL: mysql+pymysql://${MYSQL_USER:-fashioncart}:${MYSQL_PASSWORD:?Set MYSQL_PASSWORD in .env}@db:3306/${MYSQL_DATABASE:-fashioncart}
+      JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET in .env}
+    command: ["python", "-m", "scripts.seed"]
+    depends_on:
+      db:
+        condition: service_healthy
+    networks: [fashioncart]
+
+networks:
+  fashioncart:
+    driver: bridge
+
+volumes:
+  fashioncart_mysql:
