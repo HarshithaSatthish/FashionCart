@@ -12,3 +12,6 @@ dist/
 .vscode/
 .vercel/
 *.zip
+
+.vercel
+.env*
