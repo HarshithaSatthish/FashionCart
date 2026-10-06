@@ -8,17 +8,23 @@ from app.core.config import get_settings
 from app.core.database import get_db
 from app.models.user import User
 
+import bcrypt
+
 settings = get_settings()
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/auth/login")
 
 
 def hash_password(password: str) -> str:
-    return pwd_context.hash(password)
+    pwd_bytes = password.encode("utf-8")[:72]
+    return bcrypt.hashpw(pwd_bytes, bcrypt.gensalt()).decode("utf-8")
 
 
 def verify_password(plain: str, hashed: str) -> bool:
-    return pwd_context.verify(plain, hashed)
+    try:
+        plain_bytes = plain.encode("utf-8")[:72]
+        return bcrypt.checkpw(plain_bytes, hashed.encode("utf-8"))
+    except Exception:
+        return False
 
 
 def create_access_token(subject: str) -> str:

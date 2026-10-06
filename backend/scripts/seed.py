@@ -1,6 +1,5 @@
 import random
 from decimal import Decimal
-from faker import Faker
 from sqlalchemy import select
 from app.core.database import Base, engine, SessionLocal
 from app.core.security import hash_password
@@ -9,8 +8,18 @@ from app.models.customer import Customer
 from app.models.product import Product
 from app.models.order import Order, OrderItem
 
-Faker.seed(42)
-fake = Faker()
+try:
+    from faker import Faker
+    Faker.seed(42)
+    fake = Faker()
+    def get_name(i):
+        return fake.name()
+except ImportError:
+    first_names = ["Emma", "Liam", "Olivia", "Noah", "Ava", "Oliver", "Sophia", "Elijah", "Isabella", "James", "Mia", "Lucas", "Harper", "Henry", "Evelyn"]
+    last_names = ["Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez", "Hernandez", "Lopez", "Gonzalez", "Wilson", "Anderson"]
+    def get_name(i):
+        return f"{first_names[i % len(first_names)]} {last_names[(i * 3) % len(last_names)]}"
+
 random.seed(42)
 
 PRODUCTS = [
@@ -45,7 +54,7 @@ def main():
         products = db.query(Product).all()
         by_name = {p.product_name:p for p in products}
         if (db.query(Customer).count() or 0) == 0:
-            db.add_all([Customer(name=fake.name(), email=f"customer{i}@example.com", gender=random.choice(["Female","Male","Other"]), age=random.randint(18,60)) for i in range(1,101)])
+            db.add_all([Customer(name=get_name(i), email=f"customer{i}@example.com", gender=random.choice(["Female","Male","Other"]), age=random.randint(18,60)) for i in range(1,101)])
             db.flush()
         customers = db.query(Customer).all()
         if (db.query(Order).count() or 0) == 0:
