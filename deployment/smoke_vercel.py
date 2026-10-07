@@ -19,6 +19,9 @@ checks = [
     ("/health", "application/json"),
     ("/health/ready", "application/json"),
     ("/openapi.json", "application/json"),
+    ("/assets/products/classic-t-shirt.jpg", "image/jpeg"),
+    ("/assets/products/product-placeholder.jpg", "image/jpeg"),
+    ("/product-images.js", "javascript"),
 ]
 
 failed = False

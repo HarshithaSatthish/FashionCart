@@ -1,0 +1,152 @@
+{
+  "Classic T-Shirt": {
+    "localPath": "/assets/products/classic-t-shirt.jpg",
+    "sourcePage": "https://unsplash.com/photos/a-white-shirt-on-a-white-background-4rUYuwJ2vGw",
+    "photographer": "mockupbee"
+  },
+  "Graphic T-Shirt": {
+    "localPath": "/assets/products/graphic-t-shirt.jpg",
+    "sourcePage": "https://unsplash.com/photos/young-man-in-graphic-t-shirt-8m_Oi9Uj1Wg",
+    "photographer": "Andrej Ermakov"
+  },
+  "Slim Jeans": {
+    "localPath": "/assets/products/slim-jeans.jpg",
+    "sourcePage": "https://unsplash.com/photos/blue-denim-apparel-Ydzg9ipWw5E",
+    "photographer": "Tobias Olivier"
+  },
+  "Blue Jeans": {
+    "localPath": "/assets/products/blue-jeans.jpg",
+    "sourcePage": "https://unsplash.com/photos/two-pairs-of-blue-levis-jeans-with-brand-patches-3xmBzR_rdnM",
+    "photographer": "Ignat Kushnarev"
+  },
+  "White Sneakers": {
+    "localPath": "/assets/products/white-sneakers.jpg",
+    "sourcePage": "https://unsplash.com/photos/white-leather-sneaker-with-black-details-oX5pCZd7ua8",
+    "photographer": "Jordan Hou"
+  },
+  "Running Sneakers": {
+    "localPath": "/assets/products/running-sneakers.jpg",
+    "sourcePage": "https://unsplash.com/photos/a-pair-of-white-sneakers-with-orange-and-blue-accents-VpJNS_H_KHM",
+    "photographer": "Joshua Díaz"
+  },
+  "Summer Dress": {
+    "localPath": "/assets/products/summer-dress.jpg",
+    "sourcePage": "https://unsplash.com/photos/womens-blue-sleeveless-dress-yAEeKYVOKys",
+    "photographer": "Sixteen Miles Out"
+  },
+  "Party Dress": {
+    "localPath": "/assets/products/party-dress.jpg",
+    "sourcePage": "https://unsplash.com/photos/a-dress-on-a-table--x15sukRHjE",
+    "photographer": "Izabelly Marques"
+  },
+  "Leather Handbag": {
+    "localPath": "/assets/products/leather-handbag.jpg",
+    "sourcePage": "https://unsplash.com/photos/brown-leather-handbag-on-white-surface-tcVH_BwHtrc",
+    "photographer": "Irene Kredenets"
+  },
+  "Tote Handbag": {
+    "localPath": "/assets/products/tote-handbag.jpg",
+    "sourcePage": "https://unsplash.com/photos/person-holding-tote-bag-TeD4qZjGIMw",
+    "photographer": "Jon Tyson"
+  },
+  "Formal Shirt": {
+    "localPath": "/assets/products/formal-shirt.jpg",
+    "sourcePage": "https://unsplash.com/photos/man-in-white-button-up-shirt-GDebkNryTd4",
+    "photographer": "Nimble Made"
+  },
+  "Casual Shirt": {
+    "localPath": "/assets/products/casual-shirt.jpg",
+    "sourcePage": "https://unsplash.com/photos/man-in-blue-button-up-shirt-UsWlwoB3lg4",
+    "photographer": "Manu Harshith"
+  },
+  "Black Trousers": {
+    "localPath": "/assets/products/black-trousers.jpg",
+    "sourcePage": "https://unsplash.com/photos/a-man-in-a-black-shirt-and-black-pants-zOBodI7nZqc",
+    "photographer": "Bruno Ngarukiye"
+  },
+  "Chino Trousers": {
+    "localPath": "/assets/products/chino-trousers.jpg",
+    "sourcePage": "https://unsplash.com/photos/man-in-gray-shirt-and-beige-pants-standing-on-sidewalk-during-daytime-LfxQ83wxzMM",
+    "photographer": "Romello Morris"
+  },
+  "Sportswear Top": {
+    "localPath": "/assets/products/sportswear-top.jpg",
+    "sourcePage": "https://unsplash.com/photos/a-woman-in-athletic-wear-stands-outdoors-Wp7KtcAZAo8",
+    "photographer": "Jadon Johnson"
+  },
+  "Sportswear Bottom": {
+    "localPath": "/assets/products/sportswear-bottom.jpg",
+    "sourcePage": "https://unsplash.com/photos/young-man-in-soccer-jersey-and-track-pants-standing-JxmH9CAo0Tk",
+    "photographer": "Samuell Morgenstern"
+  },
+  "Denim Jacket": {
+    "localPath": "/assets/products/denim-jacket.jpg",
+    "sourcePage": "https://unsplash.com/photos/blue-denim-jacket-2Tokf3MmXvY",
+    "photographer": "Julia Kuzenkov"
+  },
+  "Bomber Jacket": {
+    "localPath": "/assets/products/bomber-jacket.jpg",
+    "sourcePage": "https://unsplash.com/photos/man-wearing-a-bucket-hat-and-bomber-jacket-OJZVD3Btip4",
+    "photographer": "Brooke Balentine"
+  },
+  "Belt": {
+    "localPath": "/assets/products/belt.jpg",
+    "sourcePage": "https://unsplash.com/photos/a-leather-belt-on-a-black-surface-eNEa7Gsfzzs",
+    "photographer": "seeetz"
+  },
+  "Cap": {
+    "localPath": "/assets/products/cap.jpg",
+    "sourcePage": "https://unsplash.com/photos/young-woman-in-a-baseball-cap-in-a-field-rjoNAPPtYl0",
+    "photographer": "Damir Semirkhanov"
+  },
+  "Scarf": {
+    "localPath": "/assets/products/scarf.jpg",
+    "sourcePage": "https://unsplash.com/photos/a-woman-with-a-patterned-scarf-and-jeans-YFWpQZtKvHU",
+    "photographer": "Fanueal Mengistu"
+  },
+  "Sunglasses": {
+    "localPath": "/assets/products/sunglasses.jpg",
+    "sourcePage": "https://unsplash.com/photos/a-pair-of-sunglasses-sitting-on-top-of-a-table-9jETdMYa6mE",
+    "photographer": "Deepak Rastogi"
+  },
+  "Loafers": {
+    "localPath": "/assets/products/loafers.jpg",
+    "sourcePage": "https://unsplash.com/photos/brown-suede-penny-loafers-b_L9iE1DUHo",
+    "photographer": "David Lezcano"
+  },
+  "Heels": {
+    "localPath": "/assets/products/heels.jpg",
+    "sourcePage": "https://unsplash.com/photos/a-pair-of-white-high-heeled-shoes-APKilKcRiVM",
+    "photographer": "Alexander Mass"
+  },
+  "Hoodie": {
+    "localPath": "/assets/products/hoodie.jpg",
+    "sourcePage": "https://unsplash.com/photos/man-wearing-grey-pullover-hoodie-a_KC8ocB650",
+    "photographer": "Jannes Jacobs"
+  },
+  "Track Pants": {
+    "localPath": "/assets/products/track-pants.jpg",
+    "sourcePage": "https://unsplash.com/photos/womans-black-track-pants-NERf0W6OAEs",
+    "photographer": "Lucas Lenzi"
+  },
+  "Cardigan": {
+    "localPath": "/assets/products/cardigan.jpg",
+    "sourcePage": "https://unsplash.com/photos/woman-in-gray-cardigan-smiling-outdoors-beside-a-white-wall-BVhFopqd8vk",
+    "photographer": "Alexander Mass"
+  },
+  "Polo Shirt": {
+    "localPath": "/assets/products/polo-shirt.jpg",
+    "sourcePage": "https://unsplash.com/photos/man-wearing-brown-polo-shirt-MHbuhKpY-J8",
+    "photographer": "Ron McClenny"
+  },
+  "Cargo Trousers": {
+    "localPath": "/assets/products/cargo-trousers.jpg",
+    "sourcePage": "https://unsplash.com/photos/stylish-woman-in-oversized-white-tee-and-brown-cargo-pants-cjEkVJg2Huw",
+    "photographer": "Anton K Wibowo"
+  },
+  "Crossbody Handbag": {
+    "localPath": "/assets/products/crossbody-handbag.jpg",
+    "sourcePage": "https://unsplash.com/photos/a-white-leather-handbag-with-a-silver-clasp-h7MlL4PsYI4",
+    "photographer": "Jametlene Reskp"
+  }
+}

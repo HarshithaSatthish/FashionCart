@@ -58,11 +58,14 @@ export function statusBadge(status='') {
   return badge(s || 'UNKNOWN', tone);
 }
 
+import { getProductImageUrl, FALLBACK_PRODUCT_IMAGE } from './product-images.js';
+export { getProductImageUrl, FALLBACK_PRODUCT_IMAGE };
+
 export function productVisual(product, size='md') {
   const name = typeof product === 'string' ? product : product?.product_name || product?.product || 'Product';
-  const cat = typeof product === 'object' ? product?.category : '';
-  const glyph = cat==='Shoes'?'◒':cat==='Handbags'?'▰':cat==='Dresses'?'⌁':cat==='Jeans'||cat==='Trousers'?'Ⅱ':cat==='Jackets'?'◇':cat==='Accessories'?'◉':'⌑';
-  return `<div class="product-visual pv-${size}" data-seed="${esc(name.slice(0,1))}"><span>${glyph}</span></div>`;
+  const imgUrl = getProductImageUrl(product);
+  const isHero = size === 'hero' || size === 'card';
+  return `<div class="product-visual pv-${size}" data-seed="${esc(name.slice(0,1))}"><img class="pv-img" src="${esc(imgUrl)}" alt="${esc(name)}" ${isHero ? 'loading="eager"' : 'loading="lazy"'} onerror="this.onerror=null;this.src='${FALLBACK_PRODUCT_IMAGE}';"></div>`;
 }
 
 export function metric(label, value, meta='', tone='violet', iconName='analysis') {
